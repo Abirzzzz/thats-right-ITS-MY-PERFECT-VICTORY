@@ -19,9 +19,7 @@ client.on("ready", () => {
 })
 
 client.on("messageCreate", async (message) => {
-  if (message.author.id !== client.user.id) return
-  if (!message.guild) return
-
+  
   const content = message.content.trim().toLowerCase()
 
   if (content === "gr") {
